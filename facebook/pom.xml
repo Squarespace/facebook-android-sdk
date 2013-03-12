@@ -19,21 +19,6 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
-  <scm>
-    <url>https://github.com/Squarespace/facebook-android-sdk</url>
-    <connection>scm:git:git@github.com:Squarespace/facebook-android-sdk.git</connection>
-    <developerConnection>scm:git:git@github.com:Squarespace/facebook-android-sdk.git</developerConnection>
-  </scm>
-  <distributionManagement>
-    <repository>
-      <id>squarespace-external-release</id>
-      <url>http://nexus.nyc.squarespace.net:8081/nexus/content/repositories/squarespace-external-release</url>
-    </repository>
-    <snapshotRepository>
-      <id>squarespace-external-snapshot</id>
-      <url>http://nexus.nyc.squarespace.net:8081/nexus/content/repositories/squarespace-external-snapshot</url>
-    </snapshotRepository>
-  </distributionManagement>
   <build>
     <sourceDirectory>${project.basedir}/src</sourceDirectory>
     <directory>${project.basedir}/bin</directory>

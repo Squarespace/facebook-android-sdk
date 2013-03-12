@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <name>Facebook SDK Parent POM</name>
+  <url>http://maven.apache.org</url>
+  <groupId>com.facebook</groupId>
+  <artifactId>facebook-sdk-parent-pom</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <modules>
+    <module>facebook</module>
+  </modules>
+  <scm>
+    <url>https://github.com/Squarespace/facebook-android-sdk</url>
+    <connection>scm:git:git@github.com:Squarespace/facebook-android-sdk.git</connection>
+    <developerConnection>scm:git:git@github.com:Squarespace/facebook-android-sdk.git</developerConnection>
+  </scm>
+  <distributionManagement>
+    <repository>
+      <id>squarespace-external-release</id>
+      <url>http://nexus.nyc.squarespace.net:8081/nexus/content/repositories/squarespace-external-release</url>
+    </repository>
+    <snapshotRepository>
+      <id>squarespace-external-snapshot</id>
+      <url>http://nexus.nyc.squarespace.net:8081/nexus/content/repositories/squarespace-external-snapshot</url>
+    </snapshotRepository>
+  </distributionManagement>
+</project>
