@@ -11,6 +11,11 @@
     <android.platform.version>4.1.1.4</android.platform.version>
     <android.sdk.level>16</android.sdk.level>
   </properties>
+  <parent>
+    <groupId>com.facebook</groupId>
+    <artifactId>facebook-sdk-parent-pom</artifactId>
+    <version>1.0</version>
+  </parent>
   <dependencies>
     <dependency>
       <groupId>com.google.android</groupId>
