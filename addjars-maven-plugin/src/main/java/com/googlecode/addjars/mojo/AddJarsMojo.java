@@ -98,7 +98,7 @@ public class AddJarsMojo extends AbstractMojo {
 				Artifact a = artifactFactory.createArtifact(project.getGroupId(), project.getArtifactId()+"-"+jar.getName(), project.getVersion(), resource.getScope(), "jar");
 				
 				File stamp = new File(workdir, a.getArtifactId());
-				if(jar.lastModified() > stamp.lastModified()) {
+				if(jar.lastModified() > stamp.lastModified() && (!"provided".equals(resource.getScope()))) {
 				    a.addMetadata(new ProjectArtifactMetadata(a, createArtifactPom(a)));
 				    artifactInstaller.install(jar, a, null);
 				    stamp.createNewFile();
