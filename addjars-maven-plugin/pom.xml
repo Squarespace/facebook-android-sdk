@@ -1,0 +1,93 @@
+<!--
+   AddJars Maven Plugin
+   Copyright (C) 2012 Vasily Karyaev <v.karyaev@gmail.com>
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+	
+    <groupId>com.googlecode.addjars-maven-plugin</groupId>
+    <artifactId>addjars-maven-plugin</artifactId>
+    <version>1.0.6-SNAPSHOT</version>
+    <packaging>maven-plugin</packaging>
+	
+    <name>AddJars Maven Plugin</name>
+    <description>Adds arbitrary jars to project's classpath</description>
+    <url>https://code.google.com/p/addjars-maven-plugin/</url>
+    <inceptionYear>2012</inceptionYear>
+	
+    <prerequisites>
+        <maven>3.0.3</maven>
+    </prerequisites>
+    
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>			
+        </license>
+    </licenses>
+
+    <scm>
+        <url>http://code.google.com/p/addjars-maven-plugin/source/browse/</url>
+        <connection>scm:hg:https://code.google.com/p/addjars-maven-plugin/</connection>
+        <developerConnection>scm:hg:https://code.google.com/p/addjars-maven-plugin/</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>Vasily Karyaev</name>
+            <email>v.karyaev@gmail.com</email>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>            
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-plugin-api</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-project</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+    </dependencies>
+	
+</project>
